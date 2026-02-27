@@ -4,13 +4,13 @@
 #support-url: https://t.me/lte_3_6
 #profile-title: LTE_36
 
-1. vless://ff6190c0-cdcb-46cf-a081-611e50ab9d4b@185.234.59.224:8443?encryption=none&security=reality&sni=holodos.vk.com&fp=qq&pbk=ATRoFPpyxH23kPCa9dKyLTT_gQ_eAkNtVVRlvPaxBjQ&sid=111111&type=tcp&flow=xtls-rprx-vision#🇫🇮_[МОСТ]_Финляндия
+vless://ff6190c0-cdcb-46cf-a081-611e50ab9d4b@185.234.59.224:8443?encryption=none&security=reality&sni=holodos.vk.com&fp=qq&pbk=ATRoFPpyxH23kPCa9dKyLTT_gQ_eAkNtVVRlvPaxBjQ&sid=111111&type=tcp&flow=xtls-rprx-vision#🇫🇮_[МОСТ]_Финляндия
 
-2. vless://ff6190c0-cdcb-46cf-a081-611e50ab9d4b@185.234.59.224:7443?encryption=none&security=reality&sni=holodos.vk.com&fp=qq&pbk=ATRoFPpyxH23kPCa9dKyLTT_gQ_eAkNtVVRlvPaxBjQ&sid=111111&type=tcp&flow=xtls-rprx-vision#🇸🇪_[МОСТ]_Швеция
+vless://ff6190c0-cdcb-46cf-a081-611e50ab9d4b@185.234.59.224:7443?encryption=none&security=reality&sni=holodos.vk.com&fp=qq&pbk=ATRoFPpyxH23kPCa9dKyLTT_gQ_eAkNtVVRlvPaxBjQ&sid=111111&type=tcp&flow=xtls-rprx-vision#🇸🇪_[МОСТ]_Швеция
 
-3. vless://ff6190c0-cdcb-46cf-a081-611e50ab9d4b@69.12.83.19:7443?encryption=none&security=reality&sni=tradingview.com&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision#🇪🇪_Эстония_|_🕹_Игровой
+vless://ff6190c0-cdcb-46cf-a081-611e50ab9d4b@69.12.83.19:7443?encryption=none&security=reality&sni=tradingview.com&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision#🇪🇪_Эстония_|_🕹_Игровой
 
-4. vless://ff6190c0-cdcb-46cf-a081-611e50ab9d4b@fr.sbrf-cdn342.ru:4241?encryption=none&security=reality&sni=dropbox.com&pbk=-8Dc8Dm5YzxVvllu8W5Uc7N9rq27_A3McxYXArNyJQs&sid=0a381e1fa219&type=tcp&flow=xtls-rprx-vision#🇫🇷_Франция
+vless://ff6190c0-cdcb-46cf-a081-611e50ab9d4b@fr.sbrf-cdn342.ru:4241?encryption=none&security=reality&sni=dropbox.com&pbk=-8Dc8Dm5YzxVvllu8W5Uc7N9rq27_A3McxYXArNyJQs&sid=0a381e1fa219&type=tcp&flow=xtls-rprx-vision#🇫🇷_Франция
 
 vless://ff6190c0-cdcb-0014-a081-611e50ab9d4b@window-two.sbrf-cdn342.ru:443?type=tcp&security=reality&pbk=OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA&fp=qq&sni=api-maps.yandex.ru&sid=111111&flow=xtls-rprx-vision&encryption=none#🇪🇪%20Обход%205%20|%20🕹%20Игровой%20(тест)
 
@@ -63,3 +63,4 @@ vless://ff6190c0-cdcb-46cf-a081-611e50ab9d4b@fourth.keen.sbrf-cdn342.ru:443?type
 vless://ff6190c0-cdcb-46cf-a081-611e50ab9d4b@fifth.keen.sbrf-cdn342.ru:443?type=tcp&security=reality&pbk=OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA&fp=safari&sni=ads.x5.ru&sid=111111&flow=xtls-rprx-vision&encryption=none#vk-05
 
 vless://ff6190c0-cdcb-46cf-a081-611e50ab9d4b@sixth.keen.sbrf-cdn342.ru:443?type=tcp&security=reality&pbk=OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA&fp=chrome&sni=ads.x5.ru&sid=111111&flow=xtls-rprx-vision&encryption=none#vk-06
+
