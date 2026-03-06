@@ -1,0 +1,91 @@
+{
+  "dns": {
+    "queryStrategy": "UseIPv4",
+    "servers": ["8.8.8.8", "8.8.4.4", "77.88.8.8"]
+  },
+  "inbounds": [
+    {
+      "port": 10808,
+      "protocol": "socks",
+      "settings": { "udp": true },
+      "tag": "socks"
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "proxy-ru",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [{ "address": "ytn.sbrf-cdn342.ru", "port": 4241, "users": [{ "id": "ff6190c0-cdcb-46cf-a081-611e50ab9d4b", "encryption": "none", "flow": "xtls-rprx-vision" }] }]
+      },
+      "streamSettings": { "network": "tcp", "security": "reality", "realitySettings": { "serverName": "sun6-22.userapi.com", "publicKey": "aCT3PdJs8nghWdaozo1O--_WKfV6K97cjIMlJSnZRQY", "fingerprint": "qq", "shortId": "111111" } }
+    },
+    {
+      "tag": "proxy-fi",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [{ "address": "185.234.59.224", "port": 8443, "users": [{ "id": "ff6190c0-cdcb-46cf-a081-611e50ab9d4b", "encryption": "none", "flow": "xtls-rprx-vision" }] }]
+      },
+      "streamSettings": { "network": "tcp", "security": "reality", "realitySettings": { "serverName": "holodos.vk.com", "publicKey": "ATRoFPpyxH23kPCa9dKyLTT_gQ_eAkNtVVRlvPaxBjQ", "fingerprint": "qq", "shortId": "111111" } }
+    },
+    {
+      "tag": "proxy-se",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [{ "address": "185.234.59.224", "port": 7443, "users": [{ "id": "ff6190c0-cdcb-46cf-a081-611e50ab9d4b", "encryption": "none", "flow": "xtls-rprx-vision" }] }]
+      },
+      "streamSettings": { "network": "tcp", "security": "reality", "realitySettings": { "serverName": "holodos.vk.com", "publicKey": "ATRoFPpyxH23kPCa9dKyLTT_gQ_eAkNtVVRlvPaxBjQ", "fingerprint": "qq", "shortId": "111111" } }
+    },
+    {
+      "tag": "proxy-ee",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [{ "address": "69.12.83.19", "port": 7443, "users": [{ "id": "ff6190c0-cdcb-46cf-a081-611e50ab9d4b", "encryption": "none", "flow": "xtls-rprx-vision" }] }]
+      },
+      "streamSettings": { "network": "tcp", "security": "reality", "realitySettings": { "serverName": "tradingview.com", "publicKey": "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE", "fingerprint": "qq", "shortId": "111111" } }
+    },
+    {
+      "tag": "proxy-fr",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [{ "address": "fr.sbrf-cdn342.ru", "port": 4241, "users": [{ "id": "ff6190c0-cdcb-46cf-a081-611e50ab9d4b", "encryption": "none", "flow": "xtls-rprx-vision" }] }]
+      },
+      "streamSettings": { "network": "tcp", "security": "reality", "realitySettings": { "serverName": "dropbox.com", "publicKey": "-8Dc8Dm5YzxVvllu8W5Uc7N9rq27_A3McxYXArNyJQs", "shortId": "0a381e1fa219" } }
+    },
+    {
+      "tag": "proxy-it",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [{ "address": "italy.sbrf-cdn342.ru", "port": 4241, "users": [{ "id": "ff6190c0-cdcb-46cf-a081-611e50ab9d4b", "encryption": "none", "flow": "xtls-rprx-vision" }] }]
+      },
+      "streamSettings": { "network": "tcp", "security": "reality", "realitySettings": { "serverName": "google.com", "publicKey": "-8Dc8Dm5YzxVvllu8W5Uc7N9rq27_A3McxYXArNyJQs", "shortId": "0a381e1fa219" } }
+    },
+    {
+      "tag": "proxy-hk",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [{ "address": "hong-kong.sbrf-cdn342.ru", "port": 4241, "users": [{ "id": "ff6190c0-cdcb-46cf-a081-611e50ab9d4b", "encryption": "none", "flow": "xtls-rprx-vision" }] }]
+      },
+      "streamSettings": { "network": "tcp", "security": "reality", "realitySettings": { "serverName": "google.com", "publicKey": "-8Dc8Dm5YzxVvllu8W5Uc7N9rq27_A3McxYXArNyJQs", "shortId": "0a381e1fa219" } }
+    },
+    { "protocol": "freedom", "tag": "direct" },
+    { "protocol": "blackhole", "tag": "block" }
+  ],
+  "routing": {
+    "balancers": [
+      {
+        "tag": "fastest_server",
+        "selector": [ "proxy-" ]
+      }
+    ],
+    "rules": [
+      { "type": "field", "balancerTag": "fastest_server", "outboundTag": null, "network": "tcp,udp" },
+      { "type": "field", "outboundTag": "direct", "domain": [ "geosite:category-ru" ] }
+    ]
+  },
+  "observatory": {
+    "subjectSelector": [ "proxy-" ],
+    "probeUrl": "https://www.google.com/generate_204",
+    "probeInterval": "10s"
+  }
+}
